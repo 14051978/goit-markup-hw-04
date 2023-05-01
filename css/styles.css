@@ -366,7 +366,9 @@ address {
 
     background-color: var(--accent-color);
 }
-.network-link:hover,
+.network-link:hover{
+    background-color: var(--hover-color);
+}
 .network-link:focus {
     background-color: var(--hover-color); 
 }
@@ -397,7 +399,7 @@ address {
 
 }
 .cutomer-list-item {
-    width: calc((100% - 120px)/6);
+    width:calc((100% - 120px)/6);
     height: 88px;
     
 }
