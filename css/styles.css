@@ -16,6 +16,7 @@
     --accent-color :#4D5AE5;
     --primary-white:#FFFFFF;
     --hover-color :#404bbf;
+    --fill-color:#0404fd;
 
 }
 
@@ -157,11 +158,19 @@ address {
     color: var(--hover-color);
 }
 /* main-section */
-    .section{
+    .hero-section{
         
     padding: 188px 0;
+    max-width: 1440px;
+    margin-left:auto ;
+    margin-right: auto;
+    background-image: 
+    linear-gradient(rgba(46,47,66,0.7),rgba(46,47,66,0.7)),
+    url(../images/people-office.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
-    background-color: var(--text-color);
     }
     .container-moto{
     display: block;
@@ -217,7 +226,18 @@ address {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
+.features-icon{
+     display: flex; 
+     align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color:#F4F4FD ;
+    margin-bottom: 8px;
+    top: 0px;
+    left: 0px;
+}
 .features-container{
     display: flex;
 }
@@ -292,7 +312,7 @@ address {
 
 }
 .card-container{
-    padding: 32px 16px 32px 16px;
+    padding: 32px 0px 32px 0px;
 }
 
 .team-list{
@@ -300,8 +320,10 @@ address {
     gap: 24px;
 }
 .team-card{
+    width: calc((100%-72px)/4);
     border-radius: 0 0 4px 4px;
     background-color: var(--primary-white);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
      
 .team-name{
@@ -323,10 +345,43 @@ address {
     line-height: 1.5;
     
 }
+.network-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.network-item {
+    width: 40px;
+    height: 40px;
+}
+.network-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.network-link:hover,
+.network-link:focus{
+    background: color #31d0aa; ;
+}
+
+.network-social{
+    fill: var(--fill-color);
+   
+}
+.network-footer{
+    display: flex;
+    gap: 16px;
+    text-align: center;
+    justify-content: center;
+}
 .footer{
+    display: flex;
     padding: 100px 0;
     background-color:var(--text-color);
-     
+    
 }
 .footer-text {
     width: 264px;
@@ -350,7 +405,6 @@ address {
 }
 .footer-logo{
     
-    
     color: #F4F4FD ;;
     font-family: Raleway, sans-serif;
     font-weight: 800;
@@ -359,6 +413,20 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+}
+.footer-icon{
+    display: block;
+    align-items: baseline;
+    justify-content: center;
+}
+.social-media{
+   text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-white);
+
 }
 .portfolio-section{
     padding: 96px 0 120px 0;
