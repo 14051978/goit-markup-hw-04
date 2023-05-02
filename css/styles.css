@@ -487,6 +487,15 @@ margin-right: 120px;
     color: var(--primary-white);
     margin-bottom: 16px;
 }
+.network-foot{
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .network-foot:hover{
     background-color: #31d0aa;
   
