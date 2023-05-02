@@ -351,6 +351,7 @@ address {
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-top: 8px;
 }
 .network-item {
     width: 40px;
@@ -437,12 +438,11 @@ address {
 .footer-container{
     display: flex;
     align-items: baseline;
-    
+    gap: 120px;
 }
-.left-footer{
-margin-left: 156px;
-margin-right: 120px;
-}
+/* .left-footer{
+margin-right: 120px; */
+/* } */
 
 .footer-text {
     width: 264px;
