@@ -438,11 +438,11 @@ address {
 .footer-container{
     display: flex;
     align-items: baseline;
-    gap: 120px;
+    
 }
-/* .left-footer{
-margin-right: 120px; */
-/* } */
+.left-footer{
+margin-right: 120px;
+} 
 
 .footer-text {
     width: 264px;
